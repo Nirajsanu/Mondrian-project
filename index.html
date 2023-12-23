@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      background-color: #000;
+      box-shadow: 10px 20px 20px;
+    }
+    
+    .red{
+      background-color: #E72F24;
+    }
+    .white{
+      background-color: #f0f1ec;
+    }
+    .black{
+      background-color: #232629;
+    }
+    .blue{
+      background-color: #004592;
+    }
+    .yellow{
+      background-color: #f9d01e;
+    }
+    #one{
+      grid-column: span 3;
+    }
+    #two{
+      grid-row: span 2;
+    }
+    #three{
+      grid-area: 2/2/4/4;
+    }
+    #five{
+      grid-row: span 2;
+      border-top: 10px solid black;
+    }
+    .big-container{
+      background-color: #9CF6FB;
+      padding: 30px;
+      border: 20px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h1{
+      font-family: 'Indie Flower', cursive;
+font-family: 'Libre Baskerville', serif;
+text-align: center;
+    }
+    footer{
+      text-align: center;
+      font-family: 'Indie Flower', cursive;
+font-family: 'Libre Baskerville', serif;
+    }
+    
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <h1>Mondrian Painting</h1>
+  <div class="big-container">
+  <div class="container">
+    <div class="red"></div>
+    <div class="white" id="one"></div>
+    <div class="white" id="two"></div>
+    <div class="white" id="three"></div>
+    <div class="blue"></div>
+    <div class="white" id="five"></div>
+    <div class="white" id="four"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
+</div>
+<footer>Created and Painted by @Mondrian | The CSS Grid-artist</footer>
+</body>
+
+</html>
